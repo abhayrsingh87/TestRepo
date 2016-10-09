@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.life.save.bloodbank" >
+
+    <uses-sdk
+        android:minSdkVersion="14"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blood_drop"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:name="com.life.save.bloodbank.SplashScreenActivity"
+            android:label="@string/app_name"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.life.save.bloodbank.HomeScreenActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="@string/title_activity_home_screen" >
+        </activity>
+    </application>
+
+</manifest>
